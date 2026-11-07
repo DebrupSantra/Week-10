@@ -76,18 +76,7 @@ npm run storybook
 
 Build with `npm run build` and deploy the `dist` directory to Vercel or another static host. `vercel.json` rewrites SPA paths to the Vite entry point. The GitHub Actions workflow runs type checking, lint, Jest, and the production build on pushes to `main` and pull requests. Configure `VITE_API_BASE_URL` in the deployment environment when replacing mocks.
 
-## Screenshots
 
-_Add product screenshots here after running the application in the target environment._
-
-## Known limitations
-
-- Authentication is a local simulation persisted in browser storage, without a backend, secure cookies, token lifecycle, or actual authorization enforcement. Do not use it to protect real data.
-- “Live” data uses a local timer-based simulator, not a network WebSocket server; the UI indicator and data are demonstrative.
-- User and order records are local fixtures, not a durable multi-user database. User edits persist in the current browser.
-- The PWA caches static app assets only; no private API responses are configured for caching.
-- Cypress tests require the Vite server to be running at the configured base URL. Authentication and API behavior need dedicated backend integration tests when real services are connected.
-- The current dependency audit reports advisories in the development toolchain and two moderate React Router v6 advisories. The automatic React Router fix requires a major-version upgrade; re-evaluate the dependency tree before production deployment.
 
 ## Future improvements
 
