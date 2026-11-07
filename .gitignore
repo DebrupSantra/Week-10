@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+storybook-static
+cypress/videos
+cypress/screenshots
+*.tsbuildinfo
+.env
+.DS_Store
